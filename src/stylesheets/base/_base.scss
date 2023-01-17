@@ -1,0 +1,54 @@
+/*****************************************************************************
+ * base
+ *
+ *  Foundational initialization of core elements.
+ *
+ *****************************************************************************/
+
+@use "../abstracts";
+
+/**
+ * body
+ */
+body {
+  //color: var(--theme-text-regular);
+  background-color: var(--theme-bg);
+  //background-image: url("/assets/bg-sidebar-mobile.svg");
+  //background-repeat: no-repeat;
+  //background-size: 100% auto;
+
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+/**
+ * img
+ */
+img {
+  max-width: 100%;
+}
+
+/**
+ * ul
+ */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+}
+
+/*----------------------------------------------------------------------------
+  Tablet breakpoint
+ ----------------------------------------------------------------------------*/
+@include abstracts.media-breakpoint("tablet") {
+  body {
+    background-image: none;
+
+    // mobile uses grid to solve margin overflow problems, reset for desktop
+    display: initial;
+  }
+}

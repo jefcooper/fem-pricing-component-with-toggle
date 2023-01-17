@@ -1,0 +1,11 @@
+@use "light";
+
+//@media (prefers-color-scheme: "light") {}
+:root {
+  // indicate preference to the browser
+  color-scheme: light;
+}
+
+.theme--default {
+  @include light.theme--light;
+}

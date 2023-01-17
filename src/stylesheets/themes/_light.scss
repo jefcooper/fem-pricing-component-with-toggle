@@ -1,0 +1,9 @@
+@use "colors";
+
+@mixin theme--light {
+  --theme-bg: #{colors.$clr-neutral-200};
+}
+
+.theme--light {
+  @include theme--light;
+}
