@@ -1,0 +1,39 @@
+%font-characteristics {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.heading--1 {
+  @extend %font-characteristics;
+  font-size: 2rem;
+}
+
+.heading--2 {
+  @extend %font-characteristics;
+  font-size: 1.125rem;
+}
+
+.text--1 {
+  @extend %font-characteristics;
+  font-size: 4.5rem;
+  line-height: 1;
+  letter-spacing: -2.16px;
+}
+
+.text--2 {
+  @extend %font-characteristics;
+  font-size: 0.9375rem;
+}
+
+.btn {
+  @extend %font-characteristics;
+  font-size: 0.8125rem;
+  letter-spacing: 1.39px;
+  text-transform: uppercase;
+}
+
+.toggle__label {
+  @extend %font-characteristics;
+  font-size: 0.9375rem;
+}
