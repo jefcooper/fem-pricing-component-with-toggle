@@ -1,0 +1,57 @@
+@use "../base/helpers";
+
+.toggle {
+  --_toggle-switch__width: 48px;
+  --_toggle-switch__height: 24px;
+  --_toggle-switch__transition: 0.4s;
+  --_toggle-switch__inset: 4px;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+.toggle__checkbox {
+  @include helpers.visually-hidden-mixin;
+}
+.toggle__slider {
+  position: relative;
+  display: inline-block;
+  width: var(--_toggle-switch__width);
+  height: var(--_toggle-switch__height);
+
+  border-radius: var(--_toggle-switch__height);
+
+  background-image: var(--theme-toggle-bg);
+  cursor: pointer;
+  transition: var(--_toggle-switch__transition) ease-in-out;
+}
+.toggle__checkbox:focus-visible ~ .toggle > .toggle__slider {
+  outline: 3px solid;
+  outline-color: var(--theme-toggle-focus);
+}
+
+.toggle__slider::before {
+  position: absolute;
+  content: "";
+  height: calc(
+    var(--_toggle-switch__height) - var(--_toggle-switch__inset) * 2
+  );
+  width: calc(var(--_toggle-switch__height) - var(--_toggle-switch__inset) * 2);
+  left: var(--_toggle-switch__inset);
+  bottom: var(--_toggle-switch__inset);
+  transition: var(--_toggle-switch__transition) ease-in-out;
+  border-radius: calc(
+    var(--_toggle-switch__height) / 2 - var(--_toggle-switch__inset)
+  );
+  background-color: var(--theme-toggle-clr);
+}
+.toggle__checkbox:checked ~ .toggle > .toggle__slider::before {
+  transform: translateX(
+    calc(var(--_toggle-switch__width) - var(--_toggle-switch__height))
+  );
+}
+.toggle__label {
+  user-select: none;
+  cursor: pointer;
+}

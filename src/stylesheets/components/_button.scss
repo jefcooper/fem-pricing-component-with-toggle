@@ -1,0 +1,14 @@
+.btn {
+  display: block;
+  padding-block: 0.9231em;
+  border-radius: 0.4615em;
+  color: var(--theme-btn-clr);
+  background-image: var(--theme-btn-bg);
+  text-align: center;
+}
+
+.btn--primary {
+  color: var(--theme-btn-clr-primary);
+  background-color: var(--theme-btn-clr);
+  background-image: none;
+}

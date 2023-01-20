@@ -1,0 +1,7 @@
+.term-period__toggle:not(:checked) ~ .cards .term-period--monthly {
+  display: none;
+}
+
+.term-period__toggle:checked ~ .cards .term-period--yearly {
+  display: none;
+}

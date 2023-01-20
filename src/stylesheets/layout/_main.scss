@@ -1,0 +1,20 @@
+@use "../abstracts";
+
+.main {
+  padding-top: 4rem;
+  padding-bottom: 4.4375rem;
+  text-align: center;
+}
+
+.main .heading--1 {
+  color: var(--theme-clr);
+}
+
+@include abstracts.media-breakpoint("tablet") {
+  .main {
+    position: relative;
+    top: 50%;
+    padding-block: 0;
+    transform: translateY(-50%);
+  }
+}

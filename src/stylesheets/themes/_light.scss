@@ -1,7 +1,29 @@
+@use "sass:color";
 @use "colors";
 
 @mixin theme--light {
-  --theme-bg: #{colors.$clr-neutral-200};
+  --theme-bg: #{colors.$clr-neutral-300};
+  --theme-clr: #{colors.$clr-neutral-700};
+
+  --theme-btn-clr: #{colors.$clr-neutral-100};
+  --theme-btn-bg: #{colors.$clr-gradient};
+  --theme-btn-clr-primary: #{colors.$clr-primary-400};
+
+  --theme-card-clr: #{colors.$clr-neutral-700};
+  --theme-card-clr-heavy: #{colors.$clr-neutral-900};
+  --theme-card-clr-primary: #{colors.$clr-neutral-100};
+  --theme-card-bg: #{colors.$clr-neutral-100};
+  --theme-card-bg-primary: #{colors.$clr-gradient};
+  --theme-card-shadow: #{colors.$clr-shadow};
+  --theme-card-divider: #{color.change(colors.$clr-neutral-700, $alpha: 0.25)};
+  --theme-card-divider-primary: #{color.change(
+      colors.$clr-neutral-100,
+      $alpha: 0.25
+    )};
+
+  --theme-toggle-bg: #{colors.$clr-gradient};
+  --theme-toggle-clr: #{colors.$clr-neutral-100};
+  --theme-toggle-focus: #{colors.$clr-primary-400};
 }
 
 .theme--light {

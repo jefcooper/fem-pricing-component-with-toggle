@@ -1,0 +1,10 @@
+@use "../abstracts";
+
+@include abstracts.media-breakpoint("tablet") {
+  .cards {
+    display: grid;
+    grid-auto-flow: column;
+    max-width: 1050px;
+    margin-inline: auto;
+  }
+}

@@ -1,0 +1,59 @@
+@use "../abstracts";
+
+.card {
+  margin-inline: 1.5rem;
+  margin-block: 2rem;
+  padding-inline: 1.8125rem;
+  padding-block: 2rem;
+  border-radius: 10px;
+  background-color: var(--theme-card-bg);
+  color: var(--theme-card-clr);
+  box-shadow: 0px 20px 40px var(--theme-card-shadow);
+  text-align: center;
+}
+.card .heading--2 {
+  margin-bottom: 1rem;
+}
+.card .text--1 {
+  color: var(--theme-card-clr-heavy);
+  margin-bottom: 1rem;
+}
+
+.card .text--2 {
+  border-top: 1px solid;
+  border-color: var(--theme-card-divider);
+  padding-block: 1rem;
+}
+.card .text--2:last-of-type {
+  border-bottom: 1px solid;
+  border-color: var(--theme-card-divider);
+}
+
+.card .btn {
+  margin-top: 1rem;
+}
+
+.card--primary {
+  background-image: var(--theme-card-bg-primary);
+  color: var(--theme-card-clr-primary);
+}
+.card--primary .text--1 {
+  color: var(--theme-card-clr-primary);
+}
+
+.card--primary .text--2 {
+  border-color: var(--theme-card-divider-primary);
+}
+.card--primary .text--2:last-of-type {
+  border-color: var(--theme-card-divider-primary);
+}
+
+@include abstracts.media-breakpoint("tablet") {
+  .card {
+    margin-inline: 0;
+  }
+  .card--primary {
+    margin-block: 0.5rem;
+    padding-top: 3.5rem;
+  }
+}
