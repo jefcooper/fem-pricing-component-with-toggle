@@ -5,10 +5,23 @@
   color: var(--theme-btn-clr);
   background-image: var(--theme-btn-bg);
   text-align: center;
+  user-select: none;
+}
+.btn:hover {
+  background-color: transparent;
+  background-image: none;
+  outline: 1px solid;
+  outline-color: var(--theme-btn-clr-primary);
+  color: var(--theme-btn-clr-primary);
 }
 
 .btn--primary {
   color: var(--theme-btn-clr-primary);
   background-color: var(--theme-btn-clr);
   background-image: none;
+}
+.btn--primary:hover {
+  outline: 1px solid;
+  outline-color: var(--theme-btn-clr);
+  color: var(--theme-btn-clr);
 }
