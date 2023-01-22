@@ -24,6 +24,7 @@
   --theme-toggle-bg: #{colors.$clr-gradient};
   --theme-toggle-clr: #{colors.$clr-neutral-100};
   --theme-toggle-focus: #{colors.$clr-primary-400};
+  --theme-toggle-label: #{color.change(colors.$clr-neutral-700, $alpha: 0.5)};
 }
 
 .theme--light {

@@ -1,4 +1,5 @@
 .btn {
+  --_btn-transition: 400ms;
   display: block;
   padding-block: 0.9231em;
   border-radius: 0.4615em;
@@ -6,6 +7,7 @@
   background-image: var(--theme-btn-bg);
   text-align: center;
   user-select: none;
+  transition: var(--_btn-transition) ease-in-out;
 }
 .btn:hover {
   background-color: transparent;

@@ -3,7 +3,7 @@
 .toggle {
   --_toggle-switch__width: 48px;
   --_toggle-switch__height: 24px;
-  --_toggle-switch__transition: 0.4s;
+  --_toggle-switch__transition: 0.25s;
   --_toggle-switch__inset: 4px;
 
   display: flex;
@@ -30,6 +30,9 @@
   outline: 3px solid;
   outline-color: var(--theme-toggle-focus);
 }
+.toggle__checkbox:hover ~ .toggle > .toggle__slider {
+  opacity: 0.5;
+}
 
 .toggle__slider::before {
   position: absolute;
@@ -54,4 +57,5 @@
 .toggle__label {
   user-select: none;
   cursor: pointer;
+  color: var(--theme-toggle-label);
 }
