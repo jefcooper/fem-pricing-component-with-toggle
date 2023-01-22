@@ -25,6 +25,10 @@
   @extend %font-characteristics;
   font-size: 0.9375rem;
 }
+.text--3 {
+  @extend %font-characteristics;
+  font-size: 2.5rem;
+}
 
 .btn {
   @extend %font-characteristics;

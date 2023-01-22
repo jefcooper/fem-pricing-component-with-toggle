@@ -1,3 +1,13 @@
+.term-period--monthly {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.term-period--yearly {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .term-period__toggle:not(:checked) ~ .cards .term-period--monthly {
   display: none;
 }

@@ -5,6 +5,7 @@
   border-radius: 0.4615em;
   color: var(--theme-btn-clr);
   background-image: var(--theme-btn-bg);
+  background-color: transparent;
   text-align: center;
   user-select: none;
   transition: var(--_btn-transition) ease-in-out;
@@ -26,4 +27,5 @@
   outline: 1px solid;
   outline-color: var(--theme-btn-clr);
   color: var(--theme-btn-clr);
+  background-color: transparent;
 }
